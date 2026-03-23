@@ -4,58 +4,143 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Choosing Accounting Software</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
   <style>
     body {
-      font-family: Arial, sans-serif;
-      line-height: 1.6;
       margin: 0;
-      padding: 0;
-      background-color: #f7f7f7;
-    }
-    .container {
-      max-width: 900px;
-      margin: 40px auto;
-      padding: 30px;
-      background: #ffffff;
-      border-radius: 10px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-    }
-    h1 {
+      font-family: 'Inter', sans-serif;
+      background-color: #f4f6f8;
       color: #2c3e50;
+    }
+
+    .hero {
+      background: linear-gradient(120deg, #2c3e50, #4ca1af);
+      color: white;
+      padding: 80px 20px;
+      text-align: center;
+    }
+
+    .hero h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 42px;
+      margin-bottom: 10px;
+    }
+
+    .hero p {
+      font-size: 18px;
+      opacity: 0.9;
+    }
+
+    .container {
+      max-width: 850px;
+      margin: -40px auto 40px;
+      background: white;
+      padding: 40px;
+      border-radius: 12px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    }
+
+    .dropcap::first-letter {
+      float: left;
+      font-size: 48px;
+      line-height: 1;
+      font-weight: bold;
+      margin-right: 10px;
+      color: #4ca1af;
+    }
+
+    p {
+      font-size: 16px;
+      line-height: 1.8;
       margin-bottom: 20px;
     }
-    p {
-      margin-bottom: 16px;
-      color: #333;
-    }
-    .author {
-      margin-top: 30px;
+
+    .highlight {
+      background: #eef7fb;
+      border-left: 4px solid #4ca1af;
+      padding: 15px 20px;
+      margin: 25px 0;
       font-style: italic;
-      color: #555;
+    }
+
+    .quote {
+      font-size: 20px;
+      font-weight: 500;
+      margin: 30px 0;
+      color: #34495e;
+      border-left: 4px solid #2c3e50;
+      padding-left: 15px;
+    }
+
+    .author {
+      margin-top: 40px;
+      padding-top: 20px;
+      border-top: 1px solid #ddd;
+      font-size: 14px;
+      color: #777;
+    }
+
+    .badge {
+      display: inline-block;
+      background: #4ca1af;
+      color: white;
+      padding: 5px 10px;
+      border-radius: 20px;
+      font-size: 12px;
+      margin-bottom: 15px;
+    }
+
+    @media (max-width: 600px) {
+      .hero h1 {
+        font-size: 30px;
+      }
+
+      .container {
+        padding: 25px;
+      }
     }
   </style>
 </head>
 <body>
-  <div class="container">
+
+  <div class="hero">
+    <div class="badge">Business & Accounting</div>
     <h1>Choosing Accounting Software</h1>
-
-    <p>As an accounting system provider, we are often asked: “What is the most important feature to look for when evaluating accounting software?” In our opinion, the development capability of the package is the prime feature to consider.</p>
-
-    <p>Accounting software publishers generally follow a strategy of producing software that contains all of the most popular and widely used features straight out of the box. These products are designed to meet 80 to 85 per cent of the needs of all businesses; thereafter, the software authors expect customers and their supporting dealers to use the product’s in-built development tools to add functionality, thus fulfilling the remainder of the client’s needs.</p>
-
-    <p>This approach has worked well since the early 1980s when Sage released the first truly amendable system, Sage Sovereign, later to become Line 100. All of the major accounting software publishers now adopt this approach, as it allows their products to have wider appeal across multiple industry sectors.</p>
-
-    <p>In the eighties, the most successful accounting software products required the supporting dealer to modify the source code in order to add additional fields, calculations and further functionality. This approach had several drawbacks. Modifying the source code often required many months of programming, which carried large cost implications.</p>
-
-    <p>Customers who had their source code modified often found that doing so prevented them from upgrading to new versions of the software, as source code changes left no way to upgrade without losing all of the expensive development work.</p>
-
-    <p>As publishers released new versions of the accounting software, their customers were unable to upgrade, effectively freezing the functionality of the product. In contrast, today’s development tools are easier to use and in most cases they allow customers to upgrade to new product releases whilst retaining the developed features along the way.</p>
-
-    <p>A system’s ability to allow development is not just an incidental benefit today; it is part of an overall strategy to deliver solid accounting systems which contain the core features used by most businesses, combined with development tools that allow developers to tailor the system to meet their client’s needs more fully.</p>
-
-    <p>This approach enables software companies to keep the core accounting system clean and efficient and avoids building confusion into the software. If you are in the market for an accounting software solution, you would be wise to evaluate the software’s development capabilities before making your selection.</p>
-
-    <p class="author">Steve Garrett, Client Account Manager, Link Systems UK</p>
+    <p>What really matters when evaluating a system?</p>
   </div>
+
+  <div class="container">
+
+    <p class="dropcap">As an accounting system provider, we are often asked: “What is the most important feature to look for when evaluating accounting software?” In our opinion, the development capability of the package is the prime feature to consider.</p>
+
+    <div class="quote">The real value of accounting software lies not only in what it does today, but in what it can become.</div>
+
+    <p>Accounting software publishers generally follow a strategy of producing software that contains all of the most popular and widely used features straight out of the box. These products are designed to meet 80 to 85 per cent of the needs of all businesses.</p>
+
+    <p>After that, customers and their supporting dealers are expected to use the product’s in-built development tools to extend functionality and meet the remaining needs.</p>
+
+    <div class="highlight">Modern accounting systems are built with flexibility in mind — allowing businesses to adapt the software instead of adapting to the software.</div>
+
+    <p>This approach has worked well since the early 1980s when Sage released one of the first truly amendable systems. Today, nearly all major accounting software providers follow this model to appeal to a wider range of industries.</p>
+
+    <p>In the past, customization required modifying the source code — a slow and expensive process that could take months and made future upgrades nearly impossible.</p>
+
+    <p>As a result, many companies became stuck using outdated versions of their software, unable to evolve with new releases.</p>
+
+    <div class="highlight">Today’s development tools eliminate that limitation, enabling upgrades without losing custom features.</div>
+
+    <p>Modern systems are designed with both stability and adaptability in mind: a solid core combined with tools that allow developers to tailor the solution to specific business needs.</p>
+
+    <p>This keeps the system clean, efficient, and user-friendly, while still offering powerful customization when needed.</p>
+
+    <p>So, if you are in the market for an accounting software solution, it is essential to evaluate not just its current features, but its development capabilities as well.</p>
+
+    <div class="author">
+      Steve Garrett<br>
+      Client Account Manager, Link Systems UK
+    </div>
+
+  </div>
+
 </body>
 </html>
