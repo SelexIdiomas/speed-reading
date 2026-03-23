@@ -5,207 +5,222 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Choosing Accounting Software</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
 
 <style>
 body {
   margin: 0;
   font-family: 'Inter', sans-serif;
-  background: #0f172a;
-  color: #e5e7eb;
+  background: #fafafa;
+  color: #1a1a1a;
 }
 
-section {
-  padding: 80px 20px;
-  max-width: 900px;
-  margin: auto;
-}
-
+/* HERO */
 .hero {
-  text-align: center;
-  padding: 120px 20px;
-  background: linear-gradient(135deg, #1e293b, #334155);
+  max-width: 800px;
+  margin: 100px auto 60px;
+  padding: 0 20px;
 }
 
 .hero h1 {
+  font-family: 'Playfair Display', serif;
   font-size: 48px;
   margin-bottom: 10px;
 }
 
-.hero p {
-  opacity: 0.8;
+.subtitle {
+  color: #6b7280;
   font-size: 18px;
 }
 
-.big-text {
-  font-size: 28px;
-  font-weight: 600;
+/* CONTENT */
+.container {
+  max-width: 720px;
+  margin: auto;
+  padding: 0 20px 80px;
+}
+
+p {
+  font-size: 17px;
+  line-height: 1.8;
+  margin: 22px 0;
+}
+
+/* DROP CAP */
+.dropcap::first-letter {
+  float: left;
+  font-size: 54px;
+  line-height: 1;
+  margin-right: 10px;
+  font-family: 'Playfair Display', serif;
+}
+
+/* QUOTE */
+.quote {
+  font-family: 'Playfair Display', serif;
+  font-size: 26px;
   line-height: 1.4;
+  margin: 60px 0;
+  padding-left: 20px;
+  border-left: 3px solid #111;
 }
 
-.card {
-  background: #1e293b;
-  padding: 25px;
-  border-radius: 12px;
-  margin: 20px 0;
+/* DIVIDER */
+.divider {
+  height: 1px;
+  background: #e5e7eb;
+  margin: 60px 0;
 }
 
-.highlight {
-  background: #22c55e;
-  color: #022c22;
-  padding: 20px;
-  border-radius: 10px;
-  font-weight: 500;
-}
-
-.split {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 20px;
-}
-
-.bad {
-  background: #7f1d1d;
-}
-
-.good {
-  background: #064e3b;
-}
-
-.question {
+/* EMPHASIS BLOCK */
+.emphasis {
   font-size: 22px;
+  font-weight: 500;
+  margin: 40px 0;
+}
+
+/* MINI SECTION */
+.section-title {
   font-weight: 600;
-  text-align: center;
-}
-
-.footer {
-  text-align: center;
-  opacity: 0.6;
+  margin-top: 50px;
   font-size: 14px;
+  letter-spacing: 1px;
+  color: #6b7280;
 }
 
-@media (max-width: 700px) {
-  .split {
-    grid-template-columns: 1fr;
-  }
+/* COMPARISON */
+.compare {
+  margin: 40px 0;
 }
+
+.compare div {
+  padding: 15px 0;
+  border-bottom: 1px solid #eee;
+}
+
+/* AUTHOR */
+.author {
+  margin-top: 80px;
+  font-size: 14px;
+  color: #6b7280;
+}
+
+/* HOVER DETAIL */
+p:hover {
+  color: #000;
+  transition: 0.2s;
+}
+
 </style>
 </head>
 
 <body>
 
-<section class="hero">
+<div class="hero">
   <h1>Choosing Accounting Software</h1>
-  <p>What should you REALLY look for?</p>
-</section>
+  <div class="subtitle">What actually matters when making the decision</div>
+</div>
 
-<section>
-  <p class="big-text">
-    Most companies ask the wrong question when choosing accounting software.
+<div class="container">
+
+  <p class="dropcap">
+    As an accounting system provider, we are often asked what the most important feature is when evaluating accounting software. Most people expect a technical answer — features, reports, dashboards.
   </p>
 
   <p>
-    They focus on features… dashboards… reports…
+    But the real answer is simpler, and often overlooked: <b>development capability</b>.
   </p>
 
-  <p class="big-text">
-    But the real question is:
-  </p>
-
-  <div class="card question">
-    Can this system grow with you?
-  </div>
-</section>
-
-<section>
-  <div class="highlight">
-    The most important feature is NOT what the software does today…<br><br>
-    It’s what you can make it do tomorrow.
-  </div>
-</section>
-
-<section>
-  <p>
-    Most accounting software is designed to cover <b>80–85% of business needs</b>.
-  </p>
-
-  <p>
-    The remaining 15–20%? That’s where things get interesting.
-  </p>
-
-  <div class="card">
-    Companies rely on built-in development tools to customize the system and adapt it to their reality.
-  </div>
-</section>
-
-<section>
-  <p class="big-text">But it wasn’t always like this…</p>
-
-  <div class="split">
-    <div class="card bad">
-      <h3>Before</h3>
-      <p>Modify source code</p>
-      <p>Months of development</p>
-      <p>Very expensive</p>
-      <p>No upgrades possible</p>
-    </div>
-
-    <div class="card good">
-      <h3>Now</h3>
-      <p>Built-in tools</p>
-      <p>Faster customization</p>
-      <p>Lower cost</p>
-      <p>Upgrades without losing changes</p>
-    </div>
-  </div>
-</section>
-
-<section>
-  <p>
-    In the past, modifying software meant breaking it.
-  </p>
-
-  <p>
-    Companies got stuck with outdated systems because upgrading meant losing everything they built.
-  </p>
-
-  <p class="big-text">
-    Today, that problem is solved.
-  </p>
-</section>
-
-<section>
-  <div class="highlight">
-    Modern systems are designed to be both stable AND flexible.
+  <div class="quote">
+    The real value of a system is not what it does today, but what it allows you to build tomorrow.
   </div>
 
   <p>
-    A clean core system + powerful customization tools = the ideal balance.
-  </p>
-</section>
-
-<section>
-  <p class="big-text">
-    So, what should you evaluate?
+    Most accounting platforms are designed to cover around 80 to 85 per cent of business needs straight out of the box.
   </p>
 
-  <div class="card">
-    ✔ Can you customize it easily?<br>
-    ✔ Can you upgrade without losing changes?<br>
-    ✔ Does it adapt to your business?
+  <p>
+    The remaining gap is intentional. It is where customization happens.
+  </p>
+
+  <div class="emphasis">
+    Good software is not complete — it is adaptable.
   </div>
-</section>
 
-<section>
-  <p class="big-text" style="text-align:center;">
-    Choose software that evolves with you.
+  <div class="divider"></div>
+
+  <div class="section-title">HOW IT USED TO WORK</div>
+
+  <p>
+    In the past, adapting software meant modifying the source code directly.
   </p>
 
-  <div class="footer">
+  <div class="compare">
+    <div>Months of development time</div>
+    <div>High costs</div>
+    <div>High technical dependency</div>
+    <div>No safe upgrade path</div>
+  </div>
+
+  <p>
+    Once modified, systems became difficult — or impossible — to upgrade.
+  </p>
+
+  <p>
+    Many companies ended up locked into outdated versions, unable to evolve.
+  </p>
+
+  <div class="divider"></div>
+
+  <div class="section-title">HOW IT WORKS TODAY</div>
+
+  <p>
+    Modern accounting systems follow a different philosophy.
+  </p>
+
+  <p>
+    Instead of modifying the core, they provide built-in development tools that allow extensions without breaking the system.
+  </p>
+
+  <div class="compare">
+    <div>Faster customization</div>
+    <div>Lower costs</div>
+    <div>Cleaner architecture</div>
+    <div>Upgrades without losing changes</div>
+  </div>
+
+  <div class="emphasis">
+    Flexibility is no longer a workaround — it is part of the product design.
+  </div>
+
+  <div class="divider"></div>
+
+  <p>
+    This approach keeps the core system clean and efficient, while still allowing businesses to adapt it to their specific needs.
+  </p>
+
+  <p>
+    It also explains why development capability is no longer a secondary feature.
+  </p>
+
+  <div class="quote">
+    It is the feature that determines whether your software will still work for you in five years.
+  </div>
+
+  <p>
+    So if you are evaluating accounting software, do not just look at what it can do today.
+  </p>
+
+  <p class="emphasis">
+    Look at what it will let you become.
+  </p>
+
+  <div class="author">
     Steve Garrett<br>
     Client Account Manager, Link Systems UK
   </div>
-</section>
+
+</div>
 
 </body>
 </html>
