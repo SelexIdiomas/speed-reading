@@ -1,146 +1,211 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Choosing Accounting Software</title>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Inter', sans-serif;
-      background-color: #f4f6f8;
-      color: #2c3e50;
-    }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Choosing Accounting Software</title>
 
-    .hero {
-      background: linear-gradient(120deg, #2c3e50, #4ca1af);
-      color: white;
-      padding: 80px 20px;
-      text-align: center;
-    }
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
 
-    .hero h1 {
-      font-family: 'Playfair Display', serif;
-      font-size: 42px;
-      margin-bottom: 10px;
-    }
+<style>
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background: #0f172a;
+  color: #e5e7eb;
+}
 
-    .hero p {
-      font-size: 18px;
-      opacity: 0.9;
-    }
+section {
+  padding: 80px 20px;
+  max-width: 900px;
+  margin: auto;
+}
 
-    .container {
-      max-width: 850px;
-      margin: -40px auto 40px;
-      background: white;
-      padding: 40px;
-      border-radius: 12px;
-      box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-    }
+.hero {
+  text-align: center;
+  padding: 120px 20px;
+  background: linear-gradient(135deg, #1e293b, #334155);
+}
 
-    .dropcap::first-letter {
-      float: left;
-      font-size: 48px;
-      line-height: 1;
-      font-weight: bold;
-      margin-right: 10px;
-      color: #4ca1af;
-    }
+.hero h1 {
+  font-size: 48px;
+  margin-bottom: 10px;
+}
 
-    p {
-      font-size: 16px;
-      line-height: 1.8;
-      margin-bottom: 20px;
-    }
+.hero p {
+  opacity: 0.8;
+  font-size: 18px;
+}
 
-    .highlight {
-      background: #eef7fb;
-      border-left: 4px solid #4ca1af;
-      padding: 15px 20px;
-      margin: 25px 0;
-      font-style: italic;
-    }
+.big-text {
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 1.4;
+}
 
-    .quote {
-      font-size: 20px;
-      font-weight: 500;
-      margin: 30px 0;
-      color: #34495e;
-      border-left: 4px solid #2c3e50;
-      padding-left: 15px;
-    }
+.card {
+  background: #1e293b;
+  padding: 25px;
+  border-radius: 12px;
+  margin: 20px 0;
+}
 
-    .author {
-      margin-top: 40px;
-      padding-top: 20px;
-      border-top: 1px solid #ddd;
-      font-size: 14px;
-      color: #777;
-    }
+.highlight {
+  background: #22c55e;
+  color: #022c22;
+  padding: 20px;
+  border-radius: 10px;
+  font-weight: 500;
+}
 
-    .badge {
-      display: inline-block;
-      background: #4ca1af;
-      color: white;
-      padding: 5px 10px;
-      border-radius: 20px;
-      font-size: 12px;
-      margin-bottom: 15px;
-    }
+.split {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
 
-    @media (max-width: 600px) {
-      .hero h1 {
-        font-size: 30px;
-      }
+.bad {
+  background: #7f1d1d;
+}
 
-      .container {
-        padding: 25px;
-      }
-    }
-  </style>
+.good {
+  background: #064e3b;
+}
+
+.question {
+  font-size: 22px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.footer {
+  text-align: center;
+  opacity: 0.6;
+  font-size: 14px;
+}
+
+@media (max-width: 700px) {
+  .split {
+    grid-template-columns: 1fr;
+  }
+}
+</style>
 </head>
+
 <body>
 
-  <div class="hero">
-    <div class="badge">Business & Accounting</div>
-    <h1>Choosing Accounting Software</h1>
-    <p>What really matters when evaluating a system?</p>
+<section class="hero">
+  <h1>Choosing Accounting Software</h1>
+  <p>What should you REALLY look for?</p>
+</section>
+
+<section>
+  <p class="big-text">
+    Most companies ask the wrong question when choosing accounting software.
+  </p>
+
+  <p>
+    They focus on features… dashboards… reports…
+  </p>
+
+  <p class="big-text">
+    But the real question is:
+  </p>
+
+  <div class="card question">
+    Can this system grow with you?
   </div>
+</section>
 
-  <div class="container">
+<section>
+  <div class="highlight">
+    The most important feature is NOT what the software does today…<br><br>
+    It’s what you can make it do tomorrow.
+  </div>
+</section>
 
-    <p class="dropcap">As an accounting system provider, we are often asked: “What is the most important feature to look for when evaluating accounting software?” In our opinion, the development capability of the package is the prime feature to consider.</p>
+<section>
+  <p>
+    Most accounting software is designed to cover <b>80–85% of business needs</b>.
+  </p>
 
-    <div class="quote">The real value of accounting software lies not only in what it does today, but in what it can become.</div>
+  <p>
+    The remaining 15–20%? That’s where things get interesting.
+  </p>
 
-    <p>Accounting software publishers generally follow a strategy of producing software that contains all of the most popular and widely used features straight out of the box. These products are designed to meet 80 to 85 per cent of the needs of all businesses.</p>
+  <div class="card">
+    Companies rely on built-in development tools to customize the system and adapt it to their reality.
+  </div>
+</section>
 
-    <p>After that, customers and their supporting dealers are expected to use the product’s in-built development tools to extend functionality and meet the remaining needs.</p>
+<section>
+  <p class="big-text">But it wasn’t always like this…</p>
 
-    <div class="highlight">Modern accounting systems are built with flexibility in mind — allowing businesses to adapt the software instead of adapting to the software.</div>
-
-    <p>This approach has worked well since the early 1980s when Sage released one of the first truly amendable systems. Today, nearly all major accounting software providers follow this model to appeal to a wider range of industries.</p>
-
-    <p>In the past, customization required modifying the source code — a slow and expensive process that could take months and made future upgrades nearly impossible.</p>
-
-    <p>As a result, many companies became stuck using outdated versions of their software, unable to evolve with new releases.</p>
-
-    <div class="highlight">Today’s development tools eliminate that limitation, enabling upgrades without losing custom features.</div>
-
-    <p>Modern systems are designed with both stability and adaptability in mind: a solid core combined with tools that allow developers to tailor the solution to specific business needs.</p>
-
-    <p>This keeps the system clean, efficient, and user-friendly, while still offering powerful customization when needed.</p>
-
-    <p>So, if you are in the market for an accounting software solution, it is essential to evaluate not just its current features, but its development capabilities as well.</p>
-
-    <div class="author">
-      Steve Garrett<br>
-      Client Account Manager, Link Systems UK
+  <div class="split">
+    <div class="card bad">
+      <h3>Before</h3>
+      <p>Modify source code</p>
+      <p>Months of development</p>
+      <p>Very expensive</p>
+      <p>No upgrades possible</p>
     </div>
 
+    <div class="card good">
+      <h3>Now</h3>
+      <p>Built-in tools</p>
+      <p>Faster customization</p>
+      <p>Lower cost</p>
+      <p>Upgrades without losing changes</p>
+    </div>
   </div>
+</section>
+
+<section>
+  <p>
+    In the past, modifying software meant breaking it.
+  </p>
+
+  <p>
+    Companies got stuck with outdated systems because upgrading meant losing everything they built.
+  </p>
+
+  <p class="big-text">
+    Today, that problem is solved.
+  </p>
+</section>
+
+<section>
+  <div class="highlight">
+    Modern systems are designed to be both stable AND flexible.
+  </div>
+
+  <p>
+    A clean core system + powerful customization tools = the ideal balance.
+  </p>
+</section>
+
+<section>
+  <p class="big-text">
+    So, what should you evaluate?
+  </p>
+
+  <div class="card">
+    ✔ Can you customize it easily?<br>
+    ✔ Can you upgrade without losing changes?<br>
+    ✔ Does it adapt to your business?
+  </div>
+</section>
+
+<section>
+  <p class="big-text" style="text-align:center;">
+    Choose software that evolves with you.
+  </p>
+
+  <div class="footer">
+    Steve Garrett<br>
+    Client Account Manager, Link Systems UK
+  </div>
+</section>
 
 </body>
 </html>
